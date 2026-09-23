@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Buneko sitemap — https://thebuneko-web.pages.dev -->
+<!-- Covers every route in src/App.tsx (/, /products, /products/$projectId, /cart) -->
+<!-- plus Google image-sitemap entries for all product and homepage imagery. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ======================= Homepage ======================= -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thebuneko-web.pages.dev/ClearProduct.png</image:loc>
+      <image:title>Buneko — handmade crochet brand motif</image:title>
+      <image:caption>Floating Buneko product cutout used across the homepage hero and products page backdrop.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-400,q-70,f-auto/img/image1.jpeg</image:loc>
+      <image:title>Cloud Soft Cardigan</image:title>
+      <image:caption>Homepage cursor-trail image: cloud-soft everyday cardigan hand-crocheted in breathable cotton blend.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-400,q-70,f-auto/img/image2.jpeg</image:loc>
+      <image:title>Sunday Market Tote</image:title>
+      <image:caption>Homepage cursor-trail image: sturdy open-weave market tote with reinforced handles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-400,q-70,f-auto/img/image4.jpeg</image:loc>
+      <image:title>Honeycomb Throw</image:title>
+      <image:caption>Homepage cursor-trail image: weighty honeycomb-stitch throw for slow evenings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-400,q-70,f-auto/img/image5.jpeg</image:loc>
+      <image:title>Daisy Granny Coasters</image:title>
+      <image:caption>Homepage cursor-trail image: set of four daisy-motif coasters in colorfast cotton.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-400,q-70,f-auto/img/image6.jpeg</image:loc>
+      <image:title>Moonlight Beanie</image:title>
+      <image:caption>Homepage cursor-trail image: snug ribbed beanie with a folded brim for extra warmth.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-400,q-70,f-auto/img/image7.jpeg</image:loc>
+      <image:title>Picnic Blanket</image:title>
+      <image:caption>Homepage cursor-trail image: hard-wearing striped picnic blanket that folds small and spreads wide.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-400,q-70,f-auto/img/image8.jpeg</image:loc>
+      <image:title>Rosebud Headband</image:title>
+      <image:caption>Homepage cursor-trail image: delicate rosebud headband with a comfortable elastic back.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-400,q-70,f-auto/img/image9.jpeg</image:loc>
+      <image:title>Cottage Mug Cozy</image:title>
+      <image:caption>Homepage cursor-trail image: chunky buttoned mug cozy that keeps drinks warm.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================= Product listing ======================= -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image1.jpeg</image:loc>
+      <image:title>Cloud Soft Cardigan</image:title>
+      <image:caption>A cloud-soft everyday cardigan hand-crocheted in breathable cotton blend. Relaxed fit with ribbed cuffs that hold their shape.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image2.jpeg</image:loc>
+      <image:title>Sunday Market Tote</image:title>
+      <image:caption>A sturdy open-weave tote that carries groceries, yarn, and everything in between. Reinforced handles for heavy market days.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image4.jpeg</image:loc>
+      <image:title>Honeycomb Throw</image:title>
+      <image:caption>A weighty honeycomb-stitch throw for slow evenings. Generously sized to share, soft enough to fight over.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image5.jpeg</image:loc>
+      <image:title>Daisy Granny Coasters</image:title>
+      <image:caption>A set of four daisy-motif coasters in colorfast cotton. Cheerful protection for every table in the house.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image6.jpeg</image:loc>
+      <image:title>Moonlight Beanie</image:title>
+      <image:caption>A snug ribbed beanie with a folded brim for extra warmth. One size fits most, softness fits all.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image7.jpeg</image:loc>
+      <image:title>Picnic Blanket</image:title>
+      <image:caption>A hard-wearing striped blanket made for grass, sand, and backseats. Folds small, spreads wide.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image8.jpeg</image:loc>
+      <image:title>Rosebud Headband</image:title>
+      <image:caption>A delicate rosebud headband with a comfortable elastic back. Keeps hair in place, beautifully.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image9.jpeg</image:loc>
+      <image:title>Cottage Mug Cozy</image:title>
+      <image:caption>A chunky buttoned cozy that keeps drinks warm and hands happy. Fits standard mugs with room to spare.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================= Product detail pages ======================= -->
+
+  <!-- Best Seller — Cloud Soft Cardigan — ₹2,499 -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products/cloud-soft-cardigan</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image1.jpeg</image:loc>
+      <image:title>Cloud Soft Cardigan — main photo</image:title>
+      <image:caption>A cloud-soft everyday cardigan hand-crocheted in breathable cotton blend. Relaxed fit with ribbed cuffs that hold their shape.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image2.jpeg</image:loc>
+      <image:title>Cloud Soft Cardigan — gallery photo 2</image:title>
+      <image:caption>Cloud Soft Cardigan alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image4.jpeg</image:loc>
+      <image:title>Cloud Soft Cardigan — gallery photo 3</image:title>
+      <image:caption>Cloud Soft Cardigan alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image5.jpeg</image:loc>
+      <image:title>Cloud Soft Cardigan — gallery photo 4</image:title>
+      <image:caption>Cloud Soft Cardigan alternate gallery view.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- New Arrival — Sunday Market Tote — ₹899 -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products/sunday-market-tote</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image2.jpeg</image:loc>
+      <image:title>Sunday Market Tote — main photo</image:title>
+      <image:caption>A sturdy open-weave tote that carries groceries, yarn, and everything in between. Reinforced handles for heavy market days.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image6.jpeg</image:loc>
+      <image:title>Sunday Market Tote — gallery photo 2</image:title>
+      <image:caption>Sunday Market Tote alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image7.jpeg</image:loc>
+      <image:title>Sunday Market Tote — gallery photo 3</image:title>
+      <image:caption>Sunday Market Tote alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image1.jpeg</image:loc>
+      <image:title>Sunday Market Tote — gallery photo 4</image:title>
+      <image:caption>Sunday Market Tote alternate gallery view.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Best Seller — Honeycomb Throw — ₹3,299 -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products/honeycomb-throw</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image4.jpeg</image:loc>
+      <image:title>Honeycomb Throw — main photo</image:title>
+      <image:caption>A weighty honeycomb-stitch throw for slow evenings. Generously sized to share, soft enough to fight over.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image8.jpeg</image:loc>
+      <image:title>Honeycomb Throw — gallery photo 2</image:title>
+      <image:caption>Honeycomb Throw alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image9.jpeg</image:loc>
+      <image:title>Honeycomb Throw — gallery photo 3</image:title>
+      <image:caption>Honeycomb Throw alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image2.jpeg</image:loc>
+      <image:title>Honeycomb Throw — gallery photo 4</image:title>
+      <image:caption>Honeycomb Throw alternate gallery view.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Only Two Left — Daisy Granny Coasters — ₹499 -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products/daisy-granny-coasters</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image5.jpeg</image:loc>
+      <image:title>Daisy Granny Coasters — main photo</image:title>
+      <image:caption>A set of four daisy-motif coasters in colorfast cotton. Cheerful protection for every table in the house.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image1.jpeg</image:loc>
+      <image:title>Daisy Granny Coasters — gallery photo 2</image:title>
+      <image:caption>Daisy Granny Coasters alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image6.jpeg</image:loc>
+      <image:title>Daisy Granny Coasters — gallery photo 3</image:title>
+      <image:caption>Daisy Granny Coasters alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image4.jpeg</image:loc>
+      <image:title>Daisy Granny Coasters — gallery photo 4</image:title>
+      <image:caption>Daisy Granny Coasters alternate gallery view.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- New Arrival — Moonlight Beanie — ₹699 -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products/moonlight-beanie</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image6.jpeg</image:loc>
+      <image:title>Moonlight Beanie — main photo</image:title>
+      <image:caption>A snug ribbed beanie with a folded brim for extra warmth. One size fits most, softness fits all.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image5.jpeg</image:loc>
+      <image:title>Moonlight Beanie — gallery photo 2</image:title>
+      <image:caption>Moonlight Beanie alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image2.jpeg</image:loc>
+      <image:title>Moonlight Beanie — gallery photo 3</image:title>
+      <image:caption>Moonlight Beanie alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image7.jpeg</image:loc>
+      <image:title>Moonlight Beanie — gallery photo 4</image:title>
+      <image:caption>Moonlight Beanie alternate gallery view.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Best Seller — Picnic Blanket — ₹2,799 -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products/picnic-blanket</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image7.jpeg</image:loc>
+      <image:title>Picnic Blanket — main photo</image:title>
+      <image:caption>A hard-wearing striped blanket made for grass, sand, and backseats. Folds small, spreads wide.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image9.jpeg</image:loc>
+      <image:title>Picnic Blanket — gallery photo 2</image:title>
+      <image:caption>Picnic Blanket alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image4.jpeg</image:loc>
+      <image:title>Picnic Blanket — gallery photo 3</image:title>
+      <image:caption>Picnic Blanket alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image8.jpeg</image:loc>
+      <image:title>Picnic Blanket — gallery photo 4</image:title>
+      <image:caption>Picnic Blanket alternate gallery view.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Only Two Left — Rosebud Headband — ₹449 -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products/rosebud-headband</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image8.jpeg</image:loc>
+      <image:title>Rosebud Headband — main photo</image:title>
+      <image:caption>A delicate rosebud headband with a comfortable elastic back. Keeps hair in place, beautifully.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image2.jpeg</image:loc>
+      <image:title>Rosebud Headband — gallery photo 2</image:title>
+      <image:caption>Rosebud Headband alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image1.jpeg</image:loc>
+      <image:title>Rosebud Headband — gallery photo 3</image:title>
+      <image:caption>Rosebud Headband alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image9.jpeg</image:loc>
+      <image:title>Rosebud Headband — gallery photo 4</image:title>
+      <image:caption>Rosebud Headband alternate gallery view.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- New Arrival — Cottage Mug Cozy — ₹349 -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/products/cottage-mug-cozy</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image9.jpeg</image:loc>
+      <image:title>Cottage Mug Cozy — main photo</image:title>
+      <image:caption>A chunky buttoned cozy that keeps drinks warm and hands happy. Fits standard mugs with room to spare.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image4.jpeg</image:loc>
+      <image:title>Cottage Mug Cozy — gallery photo 2</image:title>
+      <image:caption>Cottage Mug Cozy alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image6.jpeg</image:loc>
+      <image:title>Cottage Mug Cozy — gallery photo 3</image:title>
+      <image:caption>Cottage Mug Cozy alternate gallery view.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ik.imagekit.io/demo/tr:w-900,q-70,f-auto/img/image5.jpeg</image:loc>
+      <image:title>Cottage Mug Cozy — gallery photo 4</image:title>
+      <image:caption>Cottage Mug Cozy alternate gallery view.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================= Cart (low priority — transactional page) ======================= -->
+  <url>
+    <loc>https://thebuneko-web.pages.dev/cart</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>

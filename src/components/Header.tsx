@@ -3,11 +3,10 @@ import { Link } from '@tanstack/react-router';
 
 type HeaderProps = {
   onMenuClick?: () => void;
-  onCartClick?: () => void;
   menuOpen?: boolean;
 };
 
-export default function Header({ onMenuClick, onCartClick, menuOpen = false }: HeaderProps) {
+export default function Header({ onMenuClick, menuOpen = false }: HeaderProps) {
   return (
     <header className="w-full bg-background">
       <div className="relative flex w-full items-center justify-between px-6 py-5 md:px-10">
@@ -40,14 +39,13 @@ export default function Header({ onMenuClick, onCartClick, menuOpen = false }: H
 
         {/* Right-aligned actions — cart icon left of the hamburger */}
         <div className="flex items-center gap-2">
-          <button
-            type="button"
+          <Link
+            to="/cart"
             aria-label="Open cart"
-            onClick={onCartClick}
             className="p-1 text-text"
           >
             <ShoppingBag aria-hidden="true" className="h-5 w-5" strokeWidth={2} />
-          </button>
+          </Link>
 
           {/* Hamburger — morphs to a close icon while the sidebar is open */}
           <button

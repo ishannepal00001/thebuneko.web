@@ -4,11 +4,13 @@ import { rootRoute } from './routes/__root';
 import { indexRoute } from './routes/index';
 import { productsRoute } from './routes/products';
 import { productDetailRoute } from './routes/product-detail';
+import { cartRoute } from './routes/cart';
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
   productsRoute,
   productDetailRoute,
+  cartRoute,
 ]);
 
 const router = createRouter({ routeTree });
