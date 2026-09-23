@@ -9,7 +9,10 @@ function RootLayout() {
 
   return (
     <div className="min-h-screen bg-background text-text">
-      <Header onMenuClick={() => setMenuOpen(true)} />
+      <Header
+        menuOpen={menuOpen}
+        onMenuClick={() => setMenuOpen(!menuOpen)}
+      />
       <StaggeredMenu
         open={menuOpen}
         onRequestClose={() => setMenuOpen(false)}

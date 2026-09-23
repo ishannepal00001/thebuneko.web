@@ -45,16 +45,32 @@ export function StaggeredMenu({
       if (event.key === 'Escape') onRequestClose()
     }
 
+    // Click-away closes, but ignores clicks inside the panel itself
+    // and on the header toggle button (which manages its own toggle)
+    function onPointerDown(event: PointerEvent) {
+      const target = event.target as HTMLElement | null
+      if (
+        target?.closest(`#${CSS.escape(menuId)}`) ||
+        target?.closest('[data-menu-toggle]')
+      ) {
+        return
+      }
+      onRequestClose()
+    }
+
     if (closeOnClickAway) {
-      document.addEventListener('pointerdown', onRequestClose, { once: true })
+      document.addEventListener('pointerdown', onPointerDown)
     }
     document.addEventListener('keydown', onKeyDown)
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
 
     return () => {
       if (closeOnClickAway) {
-        document.removeEventListener('pointerdown', onRequestClose)
+        document.removeEventListener('pointerdown', onPointerDown)
       }
       document.removeEventListener('keydown', onKeyDown)
+      document.body.style.overflow = previousOverflow
       onMenuClose?.()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -67,7 +83,11 @@ export function StaggeredMenu({
   return (
     <div
       id={menuId}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Site menu"
       aria-hidden={!open}
+      inert={!open}
       className={`fixed inset-y-0 z-50 w-[min(420px,90vw)] transition-transform duration-500 ${ease} ${
         left ? 'left-0' : 'right-0'
       } ${open ? 'translate-x-0 shadow-2xl' : slideClosed}`}

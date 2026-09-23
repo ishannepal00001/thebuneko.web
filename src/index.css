@@ -2,18 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --color-background: #F5E3D8;
+  --color-background-accent: #E2C3B1;
   --color-text: #5C3A2E;
+  --color-text-primary: #4A2D1B;
+  --color-text-secondary: #8C7060;
   --color-primary: #CE8F96;
+  --color-on-primary: #FFF9F5;
   --color-secondary: #7D8B5A;
   --color-accent: #B4552D;
+  --color-border: #D6C2B1;
+  --color-surface: #EED8C6;
+  --font-display: 'DM Serif Display', Georgia, 'Times New Roman', serif;
 }
 
 .dark {
   --color-background: #1F1815;
+  --color-background-accent: #3A2B25;
   --color-text: #F0DED4;
+  --color-text-primary: #F2E5DA;
+  --color-text-secondary: #B7A392;
   --color-primary: #D9A0A6;
+  --color-on-primary: #241A15;
   --color-secondary: #8FA06C;
   --color-accent: #E0A075;
+  --color-border: #403027;
+  --color-surface: #2A1E18;
+}
+
+/* Left-to-right image marquee — track holds 2x content, -50% shift loops seamlessly */
+@keyframes marquee-ltr {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-ltr {
+  animation: marquee-ltr 32s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-rtl {
+  animation: marquee-ltr 32s linear infinite reverse;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-ltr,
+  .animate-marquee-rtl {
+    animation: none;
+  }
+}
+
+/* Fine film grain / noise texture for vintage print surfaces */
+.grain-overlay {
+  opacity: 0.08;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+/* Faint dotted texture for flat accordion panels */
+.faq-dots {
+  background-image: radial-gradient(rgba(92, 58, 46, 0.1) 1px, transparent 1px);
+  background-size: 14px 14px;
 }
